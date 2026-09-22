@@ -26,7 +26,7 @@ namespace Ejercicio_Squeaky_Clean
                 }
                 else if (c >= 'α' && c <= 'ω')
                 {
-                    continue; // Omitir letras griegas minúsculas
+                    continue; 
                 }
                 else if (char.IsLetter(c))
                 {
@@ -51,7 +51,9 @@ namespace Ejercicio_Squeaky_Clean
         static void Main(string[] args)
         {
             string resultado = Identifier.Clean("à-ḃç");
+            string resultado2 = Identifier.Clean("My Id");
             Console.WriteLine(resultado);
+            Console.WriteLine(resultado2);
         }
     }
 }
